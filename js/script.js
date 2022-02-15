@@ -60,7 +60,7 @@ const render = function () {
   })   // функция по перебору событий, тудушек
 }
 
-toDoData = readLocalStorage
+toDoData = readLocalStorage // считываем со стораже
 render()
 
 todoControl.addEventListener('submit', function (event)  // фукция выполнения события

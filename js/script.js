@@ -11,11 +11,12 @@ const dataLocalStorage = function () {
 }; // запись в localStorage
 
 
-let readLocalStorage = JSON.parse(localStorage.getItem("toDoData")) || toDoData;
-// считывание из localStorage
 
 
 let toDoData = []   // база занесённых задачь
+
+let readLocalStorage = JSON.parse(localStorage.getItem("toDoData")) || [];
+// считывание из localStorage или объявление пустой базы данных при загрузке.
 
 
 const render = function () {
